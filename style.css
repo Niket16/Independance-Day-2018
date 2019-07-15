@@ -1,0 +1,267 @@
+body {
+    margin:0;
+    padding:0;
+    background-color:#b0c4de;
+}
+ul{
+    position: absolute;
+    top:25%;
+    left:15%;
+    right:15%;
+    /*transform : rotate(-17deg) skew(20deg);*/
+    margin:0;
+    padding:0;
+    display:flex;
+}
+ul li{
+    position:relative;
+    list-style:none;
+    width:5px;
+    height:240px;
+    border-radius:3px;
+    background-color:#fff;
+    box-shadow:-1px 0 2px rgba(0,0,0,.2);
+    overflow:hidden;
+    animation:animate 10s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform : translateY(0px);
+    }
+    25%{
+        transform : translateY(5px);
+    }
+    50%{
+        transform : translateY(0px);
+    }
+    75%{
+        transform : translateY(-5px);
+    }
+    100%{
+        transform : translateY(0px);
+    }
+}
+
+ul img{
+    position:absolute;
+    top:11.75%;
+    left:35%;
+    width:100px;
+    height:100px;
+    z-index:1;
+    animation : rotate 30s linear infinite;
+}
+@keyframes rotate{
+    0%{
+        transform : rotate(0deg) scale(0.8);
+    }
+    100%{
+        transform : rotate(360deg) scale(0.8);
+    }
+}
+
+ul li:nth-child(20n+1){
+    animation-delay:-0s;
+}
+ul li:nth-child(20n+2){
+    animation-delay:-0.5s;
+}
+ul li:nth-child(20n+3){
+    animation-delay:-1s;
+}
+ul li:nth-child(20n+4){
+    animation-delay:-1.5s;
+}
+ul li:nth-child(20n+5){
+    animation-delay:-2s;
+}
+ul li:nth-child(20n+6){
+    animation-delay:-2.5s;
+}
+ul li:nth-child(20n+7){
+    animation-delay:-3s;
+}
+ul li:nth-child(20n+8){
+    animation-delay:-3.5s;
+}
+ul li:nth-child(20n+9){
+    animation-delay:-4s;
+}
+ul li:nth-child(20n+10){
+    animation-delay:-4.5s;
+}
+ul li:nth-child(20n+11){
+    animation-delay:-5s;
+}
+ul li:nth-child(20n+12){
+    animation-delay:-5.5s;
+}
+ul li:nth-child(20n+13){
+    animation-delay:-6s;
+}
+ul li:nth-child(20n+14){
+    animation-delay:-6.5s;
+}
+ul li:nth-child(20n+15){
+    animation-delay:-7s;
+}
+ul li:nth-child(20n+16){
+    animation-delay:-7.5s;
+}
+ul li:nth-child(20n+17){
+    animation-delay:-8s;
+}
+ul li:nth-child(20n+18){
+    animation-delay:-8.5s;
+}
+ul li:nth-child(20n+19){
+    animation-delay:-9s;
+}
+ul li:nth-child(20n+20){
+    animation-delay:-9.5s;
+}
+
+ul li::before{
+    content:'';
+    position : absolute;
+    width:100%;
+    height:80px;
+    background:#ff8c00;
+}
+ul li::after{
+    content:'';
+    position : absolute;
+    bottom:0;
+    width:100%;
+    height:80px;
+    background:#008000;
+}
+.vertical{
+    border-left:8px solid black;
+    height:600px;
+    float:left;
+}
+#m{
+    font-family:cursive;
+    font-size:20px;
+    color:white;
+    text-shadow : 0 0 3px white,0 0 5px green;
+    
+}
+#jayhind{
+    font-size:35px;
+    animation:blink 2s infinite;
+}
+@keyframes blink{
+    0%{     color: orange;    }
+    /*49%{    color: transparent; }*/
+    50%{    color: transparent; }
+    /*99%{    color:transparent;  }*/
+    100%{   color: orange;    }
+}
+#hid{
+    font-size:35px;
+    animation:hid 2s infinite;
+}
+@keyframes hid{
+    0%{     color: green;    }
+    /*49%{    color: transparent; }*/
+    50%{    color: transparent; }
+    /*99%{    color:transparent;  }*/
+    100%{   color: green;    }
+}
+
+.flower{
+    position:absolute ;
+    width:50%;
+    height:50%;
+    top:50%;
+    left:20%;
+}
+.flower div {
+position:absolute ;
+display:block ;
+}
+
+.flower div:nth-child(1){
+    left:0%; 
+    animation:fall 10s linear infinite ;
+    animation-delay:-2s;
+
+}
+.flower div:nth-child(2){
+    left:20%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-4s;
+}
+.flower div:nth-child(3){
+    left:30%; 
+    animation:fall 20s linear infinite ;
+    animation-delay:-7s;
+    
+}
+.flower div:nth-child(4){
+    left:40%; 
+   animation:fall 18s linear infinite ; 
+   animation-delay:-5s;
+}
+.flower div:nth-child(5){
+    left:50%; 
+    animation:fall 14s linear infinite ;
+    animation-delay:-6s;
+}
+.flower div:nth-child(6){
+    left:100%; 
+    animation:fall 16s linear infinite ;
+    animation-delay:-10s;
+}
+.flower div:nth-child(7){
+    left:70%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-8s;
+}
+.flower div:nth-child(8){
+    left:80%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-1s;
+}
+.flower div:nth-child(9){
+    left:110%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-11s;
+}
+.flower div:nth-child(10){
+    left:130%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-5s;
+}
+
+
+@keyframes fall{
+    0%{
+        
+        top:-10%;
+        transform:rotate(0deg);
+    }
+    20%{
+        opacity:0.8;
+        transform:rotate(45deg);
+    }
+    40%{
+
+        transform: rotate(90deg);
+    }
+    60%{
+        
+       transform:rotate(135deg); 
+    }
+    80%{
+    
+        transform:rotate(180deg);
+    }
+    100%{
+        
+        top:110%;
+        transform: rotate(225deg);
+    }
+}
